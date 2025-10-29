@@ -1,0 +1,30 @@
+p {
+  background-color: lightblue;
+}
+.highlight {
+  background-color: lightcoral;
+}
+#main {
+  background-color: lightgreen;
+}
+a[href*="home"] {
+  background-color: lightyellow;
+}
+div span {
+  background-color: lightpink;
+}
+div > p {
+  background-color: lightsteelblue;
+}
+h2 + p {
+  background-color: yellow;
+}
+div.container {
+  background-color: lightgray;
+}
+#header .nav {
+  background-color: red;
+}
+div.box > p:first-child {
+  background-color: orange;
+}

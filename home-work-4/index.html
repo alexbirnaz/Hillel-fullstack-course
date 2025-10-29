@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <p>Selector: p tag, specificity: 0,0,0,1</p>
+  <p class="highlight">Selector: class .highlight, specificity: 0,0,1,0
+  </p>
+  <div id="main">Selector: id #main, specificity: 0,1,0,0</div>
+
+  <a href="homepage.html">Selector: a[href*="home"], specificity: 0,0,1,1</a>
+
+  <div><span>Selector: div span, specificity: 0,0,0,2</span></div>
+  <div>
+    <p>Selector: div > p, specificity: 0,0,0,2</p>
+  </div>
+  <h2>hello world</h2>
+  <p>Selector: h2 + p, specificity: 0,0,0,2</p>
+  <div class="container">Selector: div.container, specificity: 0,0,1,1</div>
+
+  <div id="header">
+    <span class="nav">Selector: #header .nav, specificity: 0,1,1,0</span>
+  </div>
+  <div class="box">
+    <p>Selector: div.box > p:first-child, specificity: 0,0,2,2</p>
+    <p>hello world</p>
+  </div>
+</body>
+
+</html>
