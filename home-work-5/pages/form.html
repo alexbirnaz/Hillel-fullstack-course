@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/style.css">
+  <title>Book a Session - BalanceLife Coaching</title>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="articles.html">Article</a></li>
+      <li><a href="contacts.html">Contacts</a></li>
+      <li><a href="form.html">Form</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="anchors.html">Anchors</a></li>
+    </ul>
+  </nav>
+  <div class="banner">
+    <img src="../images/formpagebanner.jpg" alt="Form page banner" width="1720"
+      height="800">
+    <div class="container"></div>
+
+    <h1>Schedule Your Free Discovery Session</h1>
+
+    <p>Complete the form below to book your complimentary 20-minute
+      consultation.
+      We
+      will contact you within 24 hours to confirm your appointment and answer
+      any
+      questions you may have.</p>
+
+    <div class="form-wrapper">
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Personal information</legend>
+          <label for="firstname">First Name</label>
+          <input type="text" id="firstname" name="firstname">
+
+          <label for="lastname">Last Name</label>
+          <input type="text" id="lastname" name="lastname">
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email">
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone">
+        </fieldset>
+
+        <fieldset>
+
+          <legend>Appointment Details</legend>
+          <label for="date">Preferred Date:</label>
+          <input type="date" id="date" name="date">
+
+          <label for="time">Preferred Time:</label>
+          <input type="time" id="time" name="time" min="09:00" max="18:00"
+            step="900">
+
+          <input type="radio" id="inperson" name="sessiontype" value="inperson">
+          <label for="inperson">In-Person Session</label>
+
+          <input type="radio" id="virtual" name="sessiontype" value="virtual">
+          <label for="virtual">Virtual Session</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your Wellness Goals</legend>
+          <label for="goal">Primary Goal:</label>
+          <select id="goal" name="goal">
+            <option value="nutrition">Improve Nutrition</option>
+            <option value="fitness">Increase Fitness</option>
+            <option value="stress">Manage Stress</option>
+            <option value="habits">Develop Healthy Habits</option>
+            <option value="other">Other</option>
+          </select>
+
+          <div>
+            <input type="checkbox" id="nutrition"><label
+              for="nutrition">Nutrition Guidance</label>
+          </div>
+          <div>
+            <input type="checkbox" id="exercise"><label for="exercise">Exercise
+              Planning</label>
+          </div>
+          <div>
+            <input type="checkbox" id="stress"><label for="stress">Stress
+              Management</label>
+          </div>
+          <div>
+            <input type="checkbox" id="sleep"><label for="sleep">Sleep
+              Improvement</label>
+          </div>
+
+          <label for="message">Tell us more about your goals or any questions
+            you
+            have:</label>
+          <textarea id="message" name="message" rows="5" cols="50"></textarea>
+        </fieldset>
+
+        <div><input type="checkbox" id="consent" name="consent" value="yes">
+          <label for="consent">I agree to the privacy policy and consent to
+            being
+            contacted regarding my consultation.</label>
+        </div>
+
+        <button type="submit">Book My Session</button>
+
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>
