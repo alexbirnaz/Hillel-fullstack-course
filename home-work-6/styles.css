@@ -1,0 +1,69 @@
+table {
+  border-collapse: collapse;
+  border: 10px solid black;
+  table-layout: fixed;
+  transform: scale(0.5);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+table.full-size {
+  transform: scale(1);
+}
+
+td {
+  border: 10px solid black;
+  width: 100px;
+  height: 100px;
+}
+
+.narrow {
+  width: 40px;
+}
+
+.large {
+  width: 200px;
+}
+
+.big-square {
+  width: 450px;
+  height: 450px;
+  background-color: red;
+}
+
+.small-square {
+  height: 200px;
+  width: 250px;
+  background-color: yellow;
+}
+
+.small-square-2 {
+  height: 100px;
+  width: 50px;
+  background-color: black;
+}
+
+.yellow-cell-1 {
+  background-color: yellow;
+}
+
+.yellow-cell-2 {
+  background-color: yellow;
+}
+
+.blue-cell {
+  height: 150px;
+  background-color: blue;
+}
+
+.red-cell {
+  background-color: red;
+}
+
+.black-cell-2 {
+  background-color: black;
+}
+
+.short-cell {
+  height: 40px;
+}
