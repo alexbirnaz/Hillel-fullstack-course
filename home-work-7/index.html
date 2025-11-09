@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homework 7</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <nav class="menu">
+    <a href="index.html">Main Tasks</a>
+    <a href="normalize.html">Normalize CSS</a>
+    <a href="reset.html">Reset CSS</a>
+  </nav>
+
+  <h1>CSS Homework 7</h1>
+
+  <section>
+    <h2>Task 2: Block and Inline Elements</h2>
+    <p><strong>What I learned:</strong> Block elements take full width and stack
+      vertically. Inline elements only take needed space and sit horizontally
+      next to each other.</p>
+
+    <div class="block">Block element 1</div>
+    <div class="block">Block element 2</div>
+
+    <span class="inline">Inline 1</span>
+    <span class="inline">Inline 2</span>
+    <span class="inline">Inline 3</span>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>Task 4: Display Property</h2>
+    <p><strong>What I learned:</strong> Display property controls how elements
+      behave. Block takes full width, inline sits next to each other,
+      inline-block combines both (sits horizontally but accepts width/height).
+      Box-sizing border-box makes width calculations easier because padding and
+      border are included in the width.</p>
+
+    <div class="display-block">display: block</div>
+    <div class="display-inline">display: inline</div>
+    <div class="display-inline">display: inline</div>
+
+    <h3>Inline-block example:</h3>
+    <div class="inline-block">Box 1</div>
+    <div class="inline-block">Box 2</div>
+    <div class="inline-block">Box 3</div>
+
+    <h3>Box-sizing demonstration:</h3>
+    <div class="box-content">content-box: width is 200px + padding + border =
+      bigger</div>
+    <div class="box-border">border-box: width is exactly 200px (includes padding
+      and border)</div>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>Task 5: Float and Clear</h2>
+    <p><strong>What I learned:</strong> Float makes elements "float" to left or
+      right and other content wraps around them. Clear property stops the
+      wrapping and forces element to appear below floated elements.</p>
+
+    <div class="container">
+      <div class="float-left">Float left</div>
+      <div class="float-right">Float right</div>
+      <p>This text wraps around the floated boxes. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit.</p>
+      <div class="clear">This box uses clear: both so it appears below the
+        floated elements</div>
+    </div>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>Task 6: Overflow Property</h2>
+    <p><strong>What I learned:</strong> Overflow controls what happens when
+      content is too big for container. Visible shows everything (default),
+      hidden cuts off extra content, scroll always shows scrollbars, auto shows
+      scrollbars only when needed. Auto is best choice in most cases.</p>
+
+    <h3>overflow: hidden</h3>
+    <div class="overflow-hidden">
+      Long text that gets cut off. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Sed do eiusmod tempor incididunt.
+    </div>
+
+    <h3>overflow: auto</h3>
+    <div class="overflow-auto">
+      Long text with scrollbar when needed. Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Sed do eiusmod tempor incididunt ut labore.
+    </div>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>Task 7: Positioning</h2>
+    <p><strong>What I learned:</strong> Position property changes how elements
+      are placed. Static is default (normal flow). Relative moves from original
+      position but keeps space. Absolute positions relative to nearest parent
+      with position (or body). Fixed stays in same place on screen when
+      scrolling. Sticky scrolls normally then sticks to position when reached.
+    </p>
+
+    <div class="relative">position: relative - moved from original spot</div>
+
+    <div class="abs-container">
+      <p>Container with position: relative</p>
+      <div class="absolute">position: absolute - positioned inside parent</div>
+    </div>
+
+    <div class="fixed">position: fixed - always visible in corner</div>
+
+    <div class="sticky">position: sticky - scroll down to see it stick to top
+    </div>
+
+    <h3>Scroll down to see difference between fixed and sticky:</h3>
+    <p>Keep scrolling to see how sticky works. Lorem ipsum dolor sit amet.</p>
+    <p>The blue sticky box will stick to top when you scroll down to it.</p>
+    <p>The red fixed box always stays in same place.</p>
+    <p>More text for scrolling...</p>
+    <p>More text for scrolling...</p>
+    <p>More text for scrolling...</p>
+    <p>More text for scrolling...</p>
+    <p>More text for scrolling...</p>
+    <p>More text for scrolling...</p>
+    <p>More text for scrolling...</p>
+    <p>More text for scrolling...</p>
+    <p>More text for scrolling...</p>
+    <p>More text for scrolling...</p>
+    <p>More text for scrolling...</p>
+    <p>More text for scrolling...</p>
+    <p>More text for scrolling...</p>
+    <p>More text for scrolling...</p>
+    <p>More text for scrolling...</p>
+    <p>More text for scrolling...</p>
+    <p>More text for scrolling...</p>
+    <p>More text for scrolling...</p>
+    <p>More text for scrolling...</p>
+    <p>More text for scrolling...</p>
+    <p>More text for scrolling...</p>
+    <p>More text for scrolling...</p>
+    <p>More text for scrolling...</p>
+    <p>More text for scrolling...</p>
+    <p>More text for scrolling...</p>
+    <p>End of page.</p>
+  </section>
+
+</body>
+
+</html>
