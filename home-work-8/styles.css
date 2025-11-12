@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.task {
+  background-color: rgb(189, 184, 184);
+  margin-bottom: 100px;
+  padding: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.box {
+  width: 200px;
+  height: 50px;
+  background-color: lightblue;
+  border: 2px solid black;
+  padding: 20px;
+}
+
+.left-box {
+  float: left;
+  margin: 10px;
+}
+
+.right-box {
+  float: right;
+  margin: 10px;
+}
+
+.left-container {
+  float: left;
+  margin: 10px;
+  margin-left: 1025px;
+}
+
+.right-container {
+  float: right;
+  width: 300px;
+  margin: 10px;
+}
+
+.tall-box {
+  width: 200px;
+  height: 160px;
+}
+
+.small-box {
+  width: 200px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.task-4 {
+  margin-left: 100px;
+}
+
+.task-5-wrapper {
+  width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.task5-left-container {
+  float: left;
+  margin: 10px;
+}
+
+.task5-right-container {
+  float: right;
+  margin: 10px;
+}
+
+.task5-tall-box {
+  width: 210px;
+  height: 160px;
+}
+
+.task5-small-box {
+  width: 210px;
+  height: 50px;
+  margin-bottom: 20px;
+}
