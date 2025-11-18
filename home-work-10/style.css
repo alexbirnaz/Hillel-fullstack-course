@@ -1,0 +1,285 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/Roboto-VariableFont_wdth\,wght.ttf");
+}
+
+:root {
+  --primary-bg: #eeeff1;
+  --dark-bg: #34547a;
+  --light-bg: #f9f9f9;
+  --text-dark: #000000;
+  --text-gray: #727272;
+  --text-white: #ffffff;
+  --font-main: "Roboto", sans-serif;
+}
+
+.primary-middle {
+  background-color: var(--primary-bg);
+}
+.dark {
+  background-color: var(--dark-bg);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+}
+
+.container {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navigation {
+  padding-block: 79px;
+  letter-spacing: 3px;
+}
+
+.menu {
+  display: flex;
+  gap: 48px;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu li a {
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--text-dark);
+}
+
+.menu li a:hover {
+  color: var(--dark-bg);
+}
+
+.menu-button {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.menu-button img {
+  width: 30px;
+  height: 30px;
+}
+
+.page-title {
+  padding-top: 83px;
+  padding-bottom: 60px;
+}
+
+.page-title h1 {
+  font-size: 45px;
+}
+
+.welcome-text {
+  font-size: 16px;
+  color: var(--text-gray);
+  width: 540px;
+  padding-bottom: 65px;
+}
+
+.write-me {
+  padding: 25px 41px 17px 41px;
+  background-color: var(--dark-bg);
+  color: var(--text-white);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.header {
+  padding-bottom: 141px;
+}
+
+section.about-me {
+  background-color: var(--light-bg);
+}
+section.about-me .container {
+  padding-block: 112px 100px;
+  text-align: center;
+}
+
+section.about-me .container h2 {
+  font-size: 32px;
+  padding-bottom: 50px;
+}
+
+section.about-me .container .about-text {
+  max-width: 540px;
+  line-height: 164%;
+  margin: 0 auto;
+  color: var(--text-gray);
+}
+
+section.projects {
+  padding-block: 100px;
+}
+
+section.projects .my-projects {
+  display: flex;
+  gap: 49px;
+  color: var(--text-white);
+  padding-bottom: 32px;
+}
+
+section.projects .my-projects li {
+  list-style: none;
+  width: 141px;
+  height: 50px;
+  background-image: url("./images/group.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 70px;
+}
+
+section.projects .my-projects li span {
+  font-size: 21px;
+}
+
+section.how-i-work .container {
+  padding-block: 100px;
+  text-align: center;
+}
+
+section.how-i-work .container h2 {
+  font-size: 32px;
+  padding-bottom: 50px;
+}
+
+section.how-i-work .container .work-text {
+  max-width: 540px;
+  line-height: 164%;
+  margin: 0 auto;
+  color: var(--text-gray);
+  padding-bottom: 57px;
+}
+
+.working-video {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+.footer {
+  padding-block: 50px;
+  color: var(--text-white);
+}
+
+.footer .author {
+  font-size: 21px;
+  padding-bottom: 20px;
+}
+
+.footer .copyright {
+  font-size: 13px;
+}
+
+@media (max-width: 1024px) {
+  .welcome-text {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .menu {
+    gap: 20px;
+  }
+
+  section.projects .my-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .navigation {
+    padding-block: 40px;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
+  }
+  .page-title h1 {
+    font-size: 32px;
+    padding-bottom: 20px;
+  }
+
+  .welcome-text {
+    width: 100%;
+    font-size: 15px;
+  }
+  .write-me {
+    padding: 15px 20px 10px 20px;
+    font-size: 14px;
+  }
+  section.about-me .container {
+    padding-block: 60px 50px;
+  }
+
+  section.about-me .container h2 {
+    font-size: 28px;
+  }
+
+  section.how-i-work .container h2 {
+    font-size: 28px;
+  }
+
+  section.projects .my-projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 20px;
+  }
+  .footer .author {
+    font-size: 18px;
+  }
+  .footer .copyright {
+    font-size: 12px;
+  }
+  section.projects .my-projects li {
+    width: auto;
+  }
+}
+
+@media (max-width: 420px) {
+  .menu-button {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  section.about-me .container {
+    padding-block: 30px 40px;
+  }
+  section.about-me .container h2 {
+    font-size: 20px;
+  }
+
+  section.how-i-work .container h2 {
+    font-size: 20px;
+  }
+}
