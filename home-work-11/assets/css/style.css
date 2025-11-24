@@ -1,256 +1,256 @@
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../../fonts/Roboto-VariableFont_wdth,wght.ttf");
+@font-face{
+  font-family:"Roboto";
+  font-style:normal;
+  font-weight:400;
+  src:url("../../fonts/Roboto-VariableFont.ttf");
 }
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
-}
-
-.container {
-  width: 100%;
-  max-width: 1024px;
-  margin: 0 auto;
-  padding: 0 20px;
+*{
+  -webkit-box-sizing:border-box;
+          box-sizing:border-box;
+  margin:0;
+  padding:0;
+  font-family:"Roboto", sans-serif;
 }
 
-.primary-middle {
-  background-color: #eeeff1;
+.container{
+  width:100%;
+  max-width:1024px;
+  margin:0 auto;
+  padding:0 20px;
 }
 
-.dark {
-  background-color: #34547a;
+.primary-middle{
+  background-color:#eeeff1;
 }
 
-.navigation {
-  padding-block: 79px;
-  letter-spacing: 3px;
+.dark{
+  background-color:#34547a;
 }
 
-.menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 48px;
-}
-.menu li {
-  list-style: none;
-}
-.menu li a {
-  font-size: 16px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #000000;
-}
-.menu li a:hover {
-  color: #34547a;
+.navigation{
+  padding-block:79px;
+  letter-spacing:3px;
 }
 
-.menu-button {
-  display: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
+.menu{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  gap:48px;
 }
-.menu-button img {
-  width: 30px;
-  height: 30px;
+.menu li{
+  list-style:none;
 }
-
-.page-title {
-  padding-top: 83px;
-  padding-bottom: 60px;
+.menu li a{
+  font-size:16px;
+  text-transform:uppercase;
+  text-decoration:none;
+  color:#000000;
 }
-.page-title h1 {
-  font-size: 45px;
-}
-
-.welcome-text {
-  font-size: 16px;
-  color: #727272;
-  width: 540px;
-  padding-bottom: 65px;
+.menu li a:hover{
+  color:#34547a;
 }
 
-.write-me {
-  padding: 25px 41px 17px 41px;
-  background-color: #34547a;
-  color: #ffffff;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 16px;
-  border: none;
-  outline: none;
-  cursor: pointer;
+.menu-button{
+  display:none;
+  background:none;
+  border:none;
+  cursor:pointer;
+  padding:0;
+}
+.menu-button img{
+  width:30px;
+  height:30px;
 }
 
-.header {
-  padding-bottom: 141px;
+.page-title{
+  padding-top:83px;
+  padding-bottom:60px;
 }
-section.about-me {
-  background-color: #f9f9f9;
-}
-section.about-me .container {
-  padding-block: 112px 100px;
-  text-align: center;
-}
-section.about-me .container h2 {
-  font-size: 32px;
-  padding-bottom: 50px;
-}
-section.about-me .container .about-text {
-  max-width: 540px;
-  line-height: 164%;
-  margin: 0 auto;
-  color: #727272;
+.page-title h1{
+  font-size:45px;
 }
 
-section.projects {
-  padding-block: 100px;
-}
-section.projects .my-projects {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 49px;
-  color: #ffffff;
-  padding-bottom: 32px;
-}
-section.projects .my-projects li {
-  list-style: none;
-  width: 141px;
-  height: 50px;
-  background-image: url("../../images/group.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  padding-left: 70px;
-}
-section.projects .my-projects li span {
-  font-size: 21px;
+.welcome-text{
+  font-size:16px;
+  color:#727272;
+  width:540px;
+  padding-bottom:65px;
 }
 
-section.how-i-work .container {
-  padding-block: 100px 100px;
-  text-align: center;
-}
-section.how-i-work .container h2 {
-  font-size: 32px;
-  padding-bottom: 50px;
-}
-section.how-i-work .container .work-text {
-  max-width: 540px;
-  line-height: 164%;
-  margin: 0 auto;
-  color: #727272;
-  padding-bottom: 57px;
+.write-me{
+  padding:25px 41px 17px 41px;
+  background-color:#34547a;
+  color:#ffffff;
+  text-transform:uppercase;
+  letter-spacing:3px;
+  font-size:16px;
+  border:none;
+  outline:none;
+  cursor:pointer;
 }
 
-.working-video {
-  width: 100%;
-  aspect-ratio: 16/9;
+.header{
+  padding-bottom:141px;
 }
-.footer {
-  padding-block: 50px;
-  color: #ffffff;
+section.about-me{
+  background-color:#f9f9f9;
 }
-.footer .author {
-  font-size: 21px;
-  padding-bottom: 20px;
+section.about-me .container{
+  padding-block:112px 100px;
+  text-align:center;
 }
-.footer .copyright {
-  font-size: 13px;
+section.about-me .container h2{
+  font-size:32px;
+  padding-bottom:50px;
 }
-@media (max-width: 1024px) {
-  .welcome-text {
-    width: 100%;
-    font-size: 15px;
+section.about-me .container .about-text{
+  max-width:540px;
+  line-height:164%;
+  margin:0 auto;
+  color:#727272;
+}
+
+section.projects{
+  padding-block:100px;
+}
+section.projects .my-projects{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  gap:49px;
+  color:#ffffff;
+  padding-bottom:32px;
+}
+section.projects .my-projects li{
+  list-style:none;
+  width:141px;
+  height:50px;
+  background-image:url(../images/group.svg);
+  background-repeat:no-repeat;
+  background-position:left center;
+  padding-left:70px;
+}
+section.projects .my-projects li span{
+  font-size:21px;
+}
+
+section.how-i-work .container{
+  padding-block:100px 100px;
+  text-align:center;
+}
+section.how-i-work .container h2{
+  font-size:32px;
+  padding-bottom:50px;
+}
+section.how-i-work .container .work-text{
+  max-width:540px;
+  line-height:164%;
+  margin:0 auto;
+  color:#727272;
+  padding-bottom:57px;
+}
+
+.working-video{
+  width:100%;
+  aspect-ratio:16/9;
+}
+.footer{
+  padding-block:50px;
+  color:#ffffff;
+}
+.footer .author{
+  font-size:21px;
+  padding-bottom:20px;
+}
+.footer .copyright{
+  font-size:13px;
+}
+@media (max-width: 1024px){
+  .welcome-text{
+    width:100%;
+    font-size:15px;
   }
-  .menu {
-    gap: 20px;
+  .menu{
+    gap:20px;
   }
-  section.projects .my-projects {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    gap: 20px;
+  section.projects .my-projects{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-wrap:wrap;
+        flex-wrap:wrap;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+    gap:20px;
   }
 }
-@media (max-width: 768px) {
-  .navigation {
-    padding-block: 40px;
+@media (max-width: 768px){
+  .navigation{
+    padding-block:40px;
   }
-  .menu {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    gap: 20px;
-    padding-bottom: 20px;
+  .menu{
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+            flex-direction:column;
+    gap:20px;
+    padding-bottom:20px;
   }
-  .page-title h1 {
-    font-size: 32px;
-    padding-bottom: 20px;
+  .page-title h1{
+    font-size:32px;
+    padding-bottom:20px;
   }
-  .welcome-text {
-    width: 100%;
-    font-size: 15px;
+  .welcome-text{
+    width:100%;
+    font-size:15px;
   }
-  .write-me {
-    padding: 15px 20px 10px 20px;
-    font-size: 14px;
+  .write-me{
+    padding:15px 20px 10px 20px;
+    font-size:14px;
   }
-  section.about-me .container {
-    padding-block: 60px 50px;
+  section.about-me .container{
+    padding-block:60px 50px;
   }
-  section.about-me .container h2 {
-    font-size: 28px;
+  section.about-me .container h2{
+    font-size:28px;
   }
-  section.how-i-work .container h2 {
-    font-size: 28px;
+  section.how-i-work .container h2{
+    font-size:28px;
   }
-  section.projects .my-projects {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    gap: 20px;
+  section.projects .my-projects{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+    gap:20px;
   }
-  section.projects .my-projects li {
-    width: auto;
+  section.projects .my-projects li{
+    width:auto;
   }
-  .footer .author {
-    font-size: 18px;
+  .footer .author{
+    font-size:18px;
   }
-  .footer .copyright {
-    font-size: 12px;
+  .footer .copyright{
+    font-size:12px;
   }
 }
-@media (max-width: 420px) {
-  .menu-button {
-    display: block;
+@media (max-width: 420px){
+  .menu-button{
+    display:block;
   }
-  .menu {
-    display: none;
+  .menu{
+    display:none;
   }
-  section.about-me .container {
-    padding-block: 30px 40px;
+  section.about-me .container{
+    padding-block:30px 40px;
   }
-  section.about-me .container h2 {
-    font-size: 20px;
+  section.about-me .container h2{
+    font-size:20px;
   }
-  section.how-i-work .container h2 {
-    font-size: 20px;
+  section.how-i-work .container h2{
+    font-size:20px;
   }
 }
