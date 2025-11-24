@@ -1,0 +1,120 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.navigation {
+  padding-block: 79px;
+  letter-spacing: 3px;
+}
+
+.menu {
+  display: flex;
+  gap: 48px;
+
+  li {
+    list-style: none;
+
+    a {
+      font-size: 16px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $text-dark;
+
+      &:hover {
+        color: $dark-bg;
+      }
+    }
+  }
+}
+
+.menu-button {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.page-title {
+  padding-top: 83px;
+  padding-bottom: 60px;
+
+  h1 {
+    font-size: 45px;
+  }
+}
+
+.welcome-text {
+  font-size: 16px;
+  color: $text-gray;
+  width: 540px;
+  padding-bottom: 65px;
+}
+
+.write-me {
+  padding: 25px 41px 17px 41px;
+  background-color: $dark-bg;
+  color: $text-white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.header {
+  padding-bottom: 141px;
+}
+
+@include desktop {
+  .welcome-text {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .menu {
+    gap: 20px;
+  }
+}
+
+@include tablet {
+  .navigation {
+    padding-block: 40px;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
+  }
+
+  .page-title h1 {
+    font-size: 32px;
+    padding-bottom: 20px;
+  }
+
+  .welcome-text {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .write-me {
+    padding: 15px 20px 10px 20px;
+    font-size: 14px;
+  }
+}
+
+@include mobile {
+  .menu-button {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+}

@@ -1,0 +1,28 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.footer {
+  padding-block: 50px;
+  color: $text-white;
+
+  .author {
+    font-size: 21px;
+    padding-bottom: 20px;
+  }
+
+  .copyright {
+    font-size: 13px;
+  }
+}
+
+@include tablet {
+  .footer {
+    .author {
+      font-size: 18px;
+    }
+
+    .copyright {
+      font-size: 12px;
+    }
+  }
+}

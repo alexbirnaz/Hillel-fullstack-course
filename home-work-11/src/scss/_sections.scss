@@ -1,0 +1,121 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+section.about-me {
+  background-color: $light-bg;
+
+  .container {
+    @include section-padding(112px, 100px);
+    @include text-center;
+
+    h2 {
+      font-size: 32px;
+      padding-bottom: 50px;
+    }
+
+    .about-text {
+      max-width: 540px;
+      line-height: 164%;
+      margin: 0 auto;
+      color: $text-gray;
+    }
+  }
+}
+
+section.projects {
+  padding-block: 100px;
+
+  .my-projects {
+    display: flex;
+    gap: 49px;
+    color: $text-white;
+    padding-bottom: 32px;
+
+    li {
+      list-style: none;
+      width: 141px;
+      height: 50px;
+      background-image: url("../../images/group.svg");
+      background-repeat: no-repeat;
+      background-position: left center;
+      padding-left: 70px;
+
+      span {
+        font-size: 21px;
+      }
+    }
+  }
+}
+
+section.how-i-work {
+  .container {
+    @include section-padding(100px, 100px);
+    @include text-center;
+
+    h2 {
+      font-size: 32px;
+      padding-bottom: 50px;
+    }
+
+    .work-text {
+      max-width: 540px;
+      line-height: 164%;
+      margin: 0 auto;
+      color: $text-gray;
+      padding-bottom: 57px;
+    }
+  }
+}
+
+.working-video {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+@include desktop {
+  section.projects .my-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+@include tablet {
+  section.about-me .container {
+    @include section-padding(60px, 50px);
+
+    h2 {
+      font-size: 28px;
+    }
+  }
+
+  section.how-i-work .container h2 {
+    font-size: 28px;
+  }
+
+  section.projects .my-projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 20px;
+
+    li {
+      width: auto;
+    }
+  }
+}
+
+@include mobile {
+  section.about-me .container {
+    @include section-padding(30px, 40px);
+
+    h2 {
+      font-size: 20px;
+    }
+  }
+
+  section.how-i-work .container h2 {
+    font-size: 20px;
+  }
+}
