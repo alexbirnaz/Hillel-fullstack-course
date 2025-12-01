@@ -1,0 +1,118 @@
+:root {
+  --bmw-light-blue: #0166b1;
+  --bmw-dark-blue: #003366;
+  --bmw-red: #f11a22;
+  --bmw-gray: #6f6f6f;
+  --bmw-black: #000000;
+  --bmw-white: #ffffff;
+}
+
+body {
+  width: 1400px;
+  margin: 20px auto;
+}
+
+.svg-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.bmw {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.light-blue-arc {
+  fill: none;
+  stroke: var(--bmw-light-blue);
+  stroke-width: 8;
+}
+
+.dark-blue-arc {
+  fill: none;
+  stroke: var(--bmw-dark-blue);
+  stroke-width: 8;
+}
+
+.red-arc {
+  fill: none;
+  stroke: var(--bmw-red);
+  stroke-width: 12;
+}
+
+.outer-ring {
+  fill: none;
+  stroke: var(--bmw-gray);
+  stroke-width: 0.5;
+}
+
+.black-circle {
+  fill: var(--bmw-black);
+  stroke: var(--bmw-gray);
+  stroke-width: 4;
+}
+
+.inner-ring {
+  fill: none;
+  stroke: var(--bmw-gray);
+  stroke-width: 3;
+}
+
+.bmw-letter {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: 900;
+  fill: var(--bmw-gray);
+}
+
+.propeller-blue {
+  fill: var(--bmw-light-blue);
+}
+
+.propeller-white {
+  fill: var(--bmw-white);
+}
+
+.cross {
+  stroke: var(--bmw-gray);
+  stroke-width: 2;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.propeller {
+  transform-origin: 50px 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    fill: red;
+  }
+  25% {
+    fill: yellow;
+  }
+  50% {
+    fill: green;
+  }
+  75% {
+    fill: blue;
+  }
+  100% {
+    fill: red;
+  }
+}
+
+.rainbow {
+  animation: rainbow 5s infinite;
+}
