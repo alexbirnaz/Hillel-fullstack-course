@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+.vr-text-stroke {
+  -webkit-text-stroke: 8px #eb8382;
+  color: transparent;
+}
