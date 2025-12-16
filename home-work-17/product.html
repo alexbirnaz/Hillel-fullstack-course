@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>California - Electronics Store</title>
+  <link href="./dist/output.css" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="min-h-screen bg-white">
+
+  <header
+    class="max-w-[1440px] mx-auto flex items-center justify-between h-20 px-4 md:px-12 lg:pl-[73px] lg:pr-[73px]">
+
+    <div class="w-[170px]">
+      <a href="index.html">
+        <img src="./images/logo.png" alt="California Store Logo"
+          class="h-[21px] w-[170px]">
+      </a>
+    </div>
+
+    <nav class="hidden md:block">
+      <ul
+        class="flex items-center gap-4 font-['Inter'] text-sm uppercase text-black">
+        <li><a href="index.html" class="hover:text-gray-500">Home</a></li>
+        <li><a href="catalog.html" class="hover:text-gray-500">Catalog</a></li>
+        <li><a href="product.html" class="hover:text-gray-500">Product</a></li>
+      </ul>
+    </nav>
+
+    <button class="flex flex-col gap-1.5 md:hidden">
+      <span class="w-6 h-0.5 bg-black"></span>
+      <span class="w-6 h-0.5 bg-black"></span>
+      <span class="w-6 h-0.5 bg-black"></span>
+    </button>
+
+    <div class="w-[170px] flex justify-end gap-4">
+      <img src="./images/search.svg" alt="Search" class="w-6 h-6">
+      <img src="./images/cart.svg" alt="Cart" class="w-10 h-6">
+    </div>
+
+  </header>
+
+  <main class="pb-16 md:pb-24">
+
+    <section
+      class="max-w-7xl mx-auto mt-8 md:mt-12 px-4 md:px-8 flex flex-col md:flex-row items-center gap-8 md:gap-16">
+      <div class="w-full md:w-1/2 rounded-2xl bg-gray-100 p-8">
+        <img src="./images/product-laptop-1.png" alt="MacBook Pro 13"
+          class="w-full h-auto object-contain">
+      </div>
+      <div class="w-full md:w-1/2 text-center md:text-left">
+        <h2
+          class="font-['Readex_Pro'] text-2xl md:text-4xl font-normal leading-snug text-black">
+          MacBook Pro 13
+        </h2>
+        <p
+          class="font-['Inter'] text-sm md:text-base font-normal leading-tight text-gray-600 mt-4">
+          Powerful performance in a sleek, portable design. Perfect for
+          professionals and creatives who need speed and reliability on the go.
+          Features the Apple M2 chip, stunning Retina display, and up to 20
+          hours of battery life.
+        </p>
+        <p class="font-['Inter'] text-lg font-normal text-black mt-4">
+          $ 1,800.00 USD
+        </p>
+        <button
+          class="w-48 h-12 rounded-full border border-black bg-transparent cursor-pointer font-['Inter'] text-lg text-black capitalize mt-6">
+          Add to Cart
+        </button>
+      </div>
+    </section>
+
+    <section
+      class="max-w-7xl mx-auto mt-8 md:mt-12 px-4 md:px-8 flex flex-col md:flex-row items-center gap-8 md:gap-16">
+      <div
+        class="w-full md:w-1/2 rounded-2xl bg-gray-100 p-8 order-1 md:order-2">
+        <img src="./images/product-watch.png" alt="Smart Galaxy Watch 3"
+          class="w-full max-w-sm h-auto object-contain mx-auto">
+      </div>
+      <div class="w-full md:w-1/2 text-center md:text-left order-2 md:order-1">
+        <h2
+          class="font-['Readex_Pro'] text-2xl md:text-4xl font-normal leading-snug text-black">
+          Smart Galaxy Watch 3
+        </h2>
+        <p
+          class="font-['Inter'] text-sm md:text-base font-normal leading-tight text-gray-600 mt-4">
+          Stay connected and track your health with style. The Smart Galaxy
+          Watch 3 features advanced fitness tracking, heart rate monitoring, and
+          sleep analysis. Water-resistant design and 5-day battery life make it
+          perfect for any lifestyle.
+        </p>
+        <p class="font-['Inter'] text-lg font-normal text-black mt-4">
+          $ 299.00 USD
+        </p>
+        <button
+          class="w-48 h-12 rounded-full border border-black bg-transparent cursor-pointer font-['Inter'] text-lg text-black capitalize mt-6">
+          Add to Cart
+        </button>
+      </div>
+    </section>
+
+    <section
+      class="max-w-7xl mx-auto mt-8 md:mt-12 px-4 md:px-8 flex flex-col md:flex-row items-center gap-8 md:gap-16">
+      <div class="w-full md:w-1/2 rounded-2xl bg-gray-100 p-8">
+        <img src="./images/product-laptop-2.png" alt="MacBook Air M1"
+          class="w-full h-auto object-contain">
+      </div>
+      <div class="w-full md:w-1/2 text-center md:text-left">
+        <h2
+          class="font-['Readex_Pro'] text-2xl md:text-4xl font-normal leading-snug text-black">
+          MacBook Air M1
+        </h2>
+        <p
+          class="font-['Inter'] text-sm md:text-base font-normal leading-tight text-gray-600 mt-4">
+          Incredibly thin, impossibly light, and blazingly fast. The MacBook Air
+          M1 delivers breakthrough performance with the Apple M1 chip. Enjoy up
+          to 18 hours of battery life, a stunning Retina display, and a fanless
+          silent design.
+        </p>
+        <p class="font-['Inter'] text-lg font-normal text-black mt-4">
+          $ 999.00 USD
+        </p>
+        <button
+          class="w-48 h-12 rounded-full border border-black bg-transparent cursor-pointer font-['Inter'] text-lg text-black capitalize mt-6">
+          Add to Cart
+        </button>
+      </div>
+    </section>
+
+    <section
+      class="max-w-7xl mx-auto mt-8 md:mt-12 px-4 md:px-8 flex flex-col md:flex-row items-center gap-8 md:gap-16">
+      <div
+        class="w-full md:w-1/2 rounded-2xl bg-gray-100 p-8 order-1 md:order-2">
+        <img src="./images/product-tablet.png" alt="iPad"
+          class="w-full max-w-sm h-auto object-contain mx-auto">
+      </div>
+      <div class="w-full md:w-1/2 text-center md:text-left order-2 md:order-1">
+        <h2
+          class="font-['Readex_Pro'] text-2xl md:text-4xl font-normal leading-snug text-black">
+          Smart Galaxy Watch 3
+        </h2>
+        <p
+          class="font-['Inter'] text-sm md:text-base font-normal leading-tight text-gray-600 mt-4">
+          The ultimate tablet experience for everyone. Draw, write, and create
+          with Apple Pencil support. Enjoy stunning visuals on the Liquid Retina
+          display. With all-day battery life, powerful A-series chip, and access
+          to over a million apps, the iPad transforms how you work and play.
+        </p>
+        <p class="font-['Inter'] text-lg font-normal text-black mt-4">
+          $ 699.00 USD
+        </p>
+        <button
+          class="w-48 h-12 rounded-full border border-black bg-transparent cursor-pointer font-['Inter'] text-lg text-black capitalize mt-6">
+          Add to Cart
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="w-full min-h-[250px] bg-[#F8F9FA] mt-12 md:mt-16 py-8 md:py-12">
+
+    <div class="max-w-screen-2xl mx-auto px-4 md:px-20">
+
+      <div class="flex flex-col md:flex-row justify-between gap-8 md:gap-0">
+
+        <div class="md:w-1/4">
+          <img src="./images/logo.png" alt="California Store Logo"
+            class="h-5 w-44 mb-4">
+          <p class="font-['Inter'] text-sm text-black/70 max-w-xs">
+            Your one-stop shop for premium electronics and accessories.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap gap-8 md:gap-16">
+
+          <div>
+            <h4 class="font-['Readex_Pro'] text-base font-medium text-black mb-4">
+              Shop
+            </h4>
+            <ul class="font-['Inter'] text-sm text-black/70 space-y-2">
+              <li><a href="#" class="hover:text-black">Phones</a></li>
+              <li><a href="#" class="hover:text-black">Laptops</a></li>
+              <li><a href="#" class="hover:text-black">Tablets</a></li>
+              <li><a href="#" class="hover:text-black">Watches</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-['Readex_Pro'] text-base font-medium text-black mb-4">
+              Support
+            </h4>
+            <ul class="font-['Inter'] text-sm text-black/70 space-y-2">
+              <li><a href="#" class="hover:text-black">Contact Us</a></li>
+              <li><a href="#" class="hover:text-black">FAQ</a></li>
+              <li><a href="#" class="hover:text-black">Shipping</a></li>
+              <li><a href="#" class="hover:text-black">Returns</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-['Readex_Pro'] text-base font-medium text-black mb-4">
+              Company
+            </h4>
+            <ul class="font-['Inter'] text-sm text-black/70 space-y-2">
+              <li><a href="#" class="hover:text-black">About</a></li>
+              <li><a href="#" class="hover:text-black">Careers</a></li>
+              <li><a href="#" class="hover:text-black">Privacy</a></li>
+              <li><a href="#" class="hover:text-black">Terms</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div
+        class="border-t border-black/10 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="font-['Inter'] text-sm text-black/50">
+          2025 California. All rights reserved.
+        </p>
+        <div class="flex gap-4">
+          <a href="#"
+            class="w-8 h-8 rounded-full bg-black/10 flex items-center justify-center hover:bg-black/20">
+            <img src="./images/facebook.svg" alt="Facebook" class="w-4 h-4">
+          </a>
+          <a href="#"
+            class="w-8 h-8 rounded-full bg-black/10 flex items-center justify-center hover:bg-black/20">
+            <img src="./images/instagram.svg" alt="Instagram" class="w-4 h-4">
+          </a>
+          <a href="#"
+            class="w-8 h-8 rounded-full bg-black/10 flex items-center justify-center hover:bg-black/20">
+            <img src="./images/twitter.svg" alt="Twitter" class="w-4 h-4">
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
