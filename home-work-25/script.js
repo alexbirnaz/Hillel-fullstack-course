@@ -18,9 +18,20 @@ function saveUserInfo(key, value) {
 }
 
 function getUserInfo(key) {
-  const value = JSON.parse(localStorage.getItem(key));
-  console.log(`Retrieved ${key}: ${JSON.stringify(value)}`);
-  return value;
+  const value = localStorage.getItem(key);
+
+  if (value) {
+    try {
+      const parsed = JSON.parse(value);
+      console.log(`Retrieved ${key}: ${JSON.stringify(parsed)}`);
+      return parsed;
+    } catch (error) {
+      console.log(`Retrieved ${key}: ${value}`);
+      return value;
+    }
+  }
+
+  return null;
 }
 // Demonstration of function usage
 // saveUserInfo('username', 'JohnDoe');
