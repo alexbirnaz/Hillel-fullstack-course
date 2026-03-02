@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Weather Section -->
+    <section class="weather-section">
+      <h2>Weather</h2>
+      <input type="text" id="cityInput" placeholder="Enter city name">
+      <button id="weatherBtn">Get Weather</button>
+      <div id="weatherResult"></div>
+    </section>
+
+    <!-- Posts Section -->
+    <section class="posts-section">
+      <h2>Posts</h2>
+      <input type="number" id="postInput" placeholder="Enter post ID (1-100)"
+        min="1" max="100">
+      <button id="postBtn">Search</button>
+      <div id="postResult"></div>
+      <div id="commentsResult"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
