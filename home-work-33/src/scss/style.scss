@@ -1,8 +1,9 @@
-$primary-color: #e94560;
-$dark-bg: #1a1a2e;
-$light-bg: #16213e;
-$text-color: #fff;
-$text-muted: #888;
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$dark-bg: #2c3e50;
+$light-bg: #34495e;
+$white: #ecf0f1;
+$text-muted: #bdc3c7;
 
 * {
   box-sizing: border-box;
@@ -11,92 +12,97 @@ $text-muted: #888;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: $dark-bg;
-  color: $text-color;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, $dark-bg, $light-bg);
+  color: $white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
 .header {
-  background-color: $light-bg;
-  padding: 60px 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 40px 0;
   text-align: center;
+  border-bottom: 3px solid $primary-color;
 }
 
 .header__title {
-  font-size: 48px;
+  font-size: 36px;
   color: $primary-color;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .header__subtitle {
-  font-size: 18px;
+  font-size: 16px;
   color: $text-muted;
 }
 
 .main {
+  padding: 50px 0;
   flex: 1;
-  padding: 60px 0;
 }
 
 .features__title {
   text-align: center;
-  font-size: 32px;
-  margin-bottom: 40px;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: $secondary-color;
 }
 
 .features__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
 }
 
 .feature-card {
-  background-color: $light-bg;
-  padding: 30px;
-  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 5px;
   text-align: center;
-  transition: transform 0.3s;
-}
-
-.feature-card:hover {
-  transform: translateY(-5px);
+  width: 220px;
+  border-left: 4px solid $secondary-color;
 }
 
 .feature-card h3 {
   color: $primary-color;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+  font-size: 18px;
 }
 
 .feature-card p {
   color: $text-muted;
+  font-size: 14px;
 }
 
 .footer {
-  background-color: $light-bg;
-  padding: 20px 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 15px 0;
   text-align: center;
   color: $text-muted;
+  font-size: 14px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .header__title {
-    font-size: 32px;
+    font-size: 28px;
   }
 
-  .header__subtitle {
-    font-size: 16px;
+  .features__grid {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .features__title {
-    font-size: 24px;
+  .feature-card {
+    width: 100%;
+    max-width: 300px;
   }
 }
