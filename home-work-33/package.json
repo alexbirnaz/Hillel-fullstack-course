@@ -1,0 +1,17 @@
+{
+  "name": "home-work-33",
+  "version": "1.0.0",
+  "description": "Gulp automation project",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.69.5"
+  }
+}
