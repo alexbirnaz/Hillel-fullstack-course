@@ -1,0 +1,13 @@
+{
+  "name": "home-work-54",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development node index.js",
+    "prod": "cross-env NODE_ENV=production node index.js",
+    "start:alex": "cross-env NODE_ENV=development node index.js Alex"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
