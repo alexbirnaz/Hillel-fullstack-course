@@ -1,0 +1,15 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    link(rel="icon" href="/favicon.ico")
+    title User Details
+    style.
+      body { font-family: Arial, sans-serif; max-width: 600px; margin: 40px auto; }
+      h1 { color: #1a1a2e; }
+      a { color: #007bff; text-decoration: none; }
+  body
+    h1 User Details
+    p Name: #{user.name}
+    p Email: #{user.email}
+    a(href="/users") Back to users
